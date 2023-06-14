@@ -1,11 +1,12 @@
 .outer{
     /* margin-top: 8vh; */
     display: flex;
-    width: 80vw;
-    height: 80vh;
+    width: 100vw;
+    height: 100vh;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    color: white;
     /* background-color: black; */
 }
 .userpage{

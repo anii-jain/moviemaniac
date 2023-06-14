@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
           <Navbar />
-          <div className="container">
+          <div className="c">
             <Routes>
               <Route path="/about" element={<About />} />
               <Route path="movie/:id" element={<Moviedetails />} />

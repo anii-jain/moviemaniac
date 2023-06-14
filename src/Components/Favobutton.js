@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import $ from "jquery";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import "./favobutton.css";
 
@@ -37,14 +35,14 @@ const [favolike, setFavolike] = useState(false);
       document.getElementById("info").classList.add("info-tog");
       setTimeout(function () {
         document.getElementById("info").classList.remove("info-tog");
-      }, 1000);
+      }, 2000);
     }
     }
 
   return (
     <div className="click" id="click" onClick={myFunction}>
       <span className="fa-heart fa-hear-o" id="span">
-        <FavoriteBorderIcon/>
+        <FavoriteIcon/>
         </span>
       <div className="ring"></div>
       <div className="ring2"></div>

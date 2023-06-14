@@ -43,42 +43,38 @@ const Moviedetails = () => {
 
   return (
     <div className="moviedetails">
-      <section className="movie-sectiondetails">
-        <div className="movie-carddetails">
-          <div className="imgdetails">
-            <figure>
-              <img src={movie.Poster} alt="" />
-            </figure>
-          </div>
-          <div className="card-contentdetails">
-            <p className="title">{movie.Title}</p>
-            <p className=""></p>
-            <p className="card-text">{movie.Released}</p>
-            <p className="card-text">{movie.Genre}</p>
-            <p className="card-text">{movie.imdbRating} / 10</p>
-            <p className="card-text">{movie.Country}</p>
+      <div className="outerh">
+        <img
+          src="https://rare-gallery.com/uploads/posts/308272-Iron-Man-Infinity-Stones-Avengers-Endgame-4K.jpg"
+          alt="movie"
+          className="outerimg"
+        />
+        <div className="detailsmovie">
+          <img src={movie.Poster} alt="movie" className="poster" />
+          <div className="d">
+            <h1 className="texth title">{movie.Title}</h1>
+            <div className="middet">
+              <p className="texth midplus"> {movie.imdbRating} / 10</p>
+              <p className="texth mid">
+                {movie.Released} || {movie.Genre}
+              </p>
+            </div>
+            <p className="texth low">
+              {" "}
+              {movie.Plot.length >= 170
+                ? `${movie.Plot.substring(0, 170)}`
+                : movie.Plot}
+            </p>
+            {/* <p className="texth low eend">{movie.Awards}  .  {movie.Country}</p> */}
             <div className="btndetails">
               <NavLink to="/" className="back-btndetails">
                 <p>Go Back</p>
               </NavLink>
-              {isAuthenticated && (
-                // <NavLink to="/" className="addtofavo-btndetails">
-
-
-
-// {/* <p></p> */}
-                  <Favobutton />
-                  
-
-
-
-
-                // </NavLink> 
-              )}
+              {isAuthenticated && <Favobutton />}
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

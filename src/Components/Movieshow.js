@@ -1,6 +1,7 @@
 import React from 'react'
 import Movies from './Movies'
 import Search from './Search'
+import "./movieshow.css"
 
 const Movieshow = () => {
   
