@@ -1,0 +1,35 @@
+
+ .search-section {
+  text-align: center;
+  margin: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.searchh2 {
+  font-weight: bold;
+  font-size: 3rem;
+  /* margin-bottom: -1rem; */
+}
+
+.formsearch {
+  margin-bottom: 2rem;
+}
+
+.searchinput {
+  width: 30rem;
+  border-radius: 100px;
+  border: none;
+  border: 1px solid var(--border-clr);
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  outline: none;
+  margin-top: 1rem;
+}
+
+.card-error p {
+  color: red;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+} 
